@@ -1,6 +1,29 @@
 @import "tailwindcss";
 
-{/*
-    @import "tailwindcss/preflight";
-@tailwind utilities;
-    */}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+}
+
+.animate-wave-slow {
+  animation: wave 3s ease-in-out infinite; 
+}
+
+/*Pulse-soft animáció: */
+@keyframes pulse-soft {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}

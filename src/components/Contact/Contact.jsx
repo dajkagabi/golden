@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="bg-white text-gray-800 py-16 px-4 md:px-20">
      
-      <div className="max-w-7xl ml-auto mr-0 grid grid-cols-1 md:grid-cols-3 gap-12"> {/* Módosítva itt */}
+      <div className="max-w-7xl ml-auto mr-0 grid grid-cols-1 md:grid-cols-3 gap-12"> 
 
    
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
