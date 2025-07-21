@@ -13,6 +13,7 @@ import sweetAndSourChickenImage from '../../assets/sweet-and-sour-chicken.png';
 import shirpfriedrice from '../../assets/shrimp-fried-rice.png';
 import kungpaoshrimp from '../../assets/kung-pao-shrimp.jpg';
 import mango from '../../assets/mango.png';
+import mochi from '../../assets/mochi.jpg'
 
 const menuItems = [
   {
@@ -124,6 +125,15 @@ const menuItems = [
     time: '5 min',
     spiciness: '4.9',
     image: mango,
+  },  {
+    id: 12,
+    name: 'Ice Mochi',
+    category: 'Desserts',
+    description: 'Japanese rice cake with ice cream filling (assorted flavors)',
+    price: '6.99',
+    time: '5 min',
+    spiciness: '4.9',
+    image: mochi,
   },
 ];
 
@@ -169,7 +179,7 @@ const Menu = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-            Our <span className="text-orange-500">Menu</span>
+            Our <span className="text-[#911929]">Menu</span>
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
             Discover authentic Chinese flavors crafted with traditional techniques and the
@@ -184,10 +194,10 @@ const Menu = () => {
               onClick={() => filterByCategory(category)}
               className={`
                 ${activeCategory === category
-                  ? 'bg-orange-500 text-white'
+                  ? 'bg-[#911929] text-white'
                   : 'bg-gray-100 text-gray-800'}
                 font-semibold py-2 px-6 rounded-full shadow-md
-                hover:bg-orange-600 hover:text-white transition-colors duration-300
+                hover:bg-[#EC2642] hover:text-white transition-colors duration-300
                 flex items-center whitespace-nowrap
               `}
             >
@@ -204,16 +214,16 @@ const Menu = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-88 object-cover"
                 />
-                <span className={`absolute top-4 right-4 text-white text-xs font-bold px-2 py-1 rounded-full ${item.spiciness.includes('🌶️') ? 'bg-red-500' : 'bg-orange-500'}`}>
+                <span className={`absolute top-4 right-4 text-white text-xs font-bold px-2 py-1 rounded-full ${item.spiciness.includes('🌶️') ? 'bg-red-900' : 'bg-[#EC2642]'}`}>
                   {item.spiciness}
                 </span>
               </div>
               <div className="p-6 flex flex-col items-center">
                 <div className="flex justify-between items-baseline w-full mb-2">
                   <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
-                  <span className="text-xl font-bold text-orange-500">${item.price}</span>
+                  <span className="text-xl font-bold text-[#EC2642]">${item.price}</span>
                 </div>
                 <p className="text-gray-600 text-sm mb-4 text-center">
                   {item.description}
