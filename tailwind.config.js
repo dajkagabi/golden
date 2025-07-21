@@ -7,16 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "chinese-red": {
-          50: "#fef2f2",
-          600: "#dc2626",
-          900: "#7f1d1d",
-        },
-        "chinese-gold": {
-          50: "#fffbeb",
-          500: "#f59e0b",
-          900: "#78350f",
-        },
+        "chinese-red-50": "#fef2f2",
+        "chinese-red-600": "#dc2626",
+        "chinese-red-900": "#7f1d1d",
+        "chinese-gold-50": "#fffbeb",
+        "chinese-gold-500": "#f59e0b",
+        "chinese-gold-900": "#78350f",
       },
       keyframes: {
         pulseSoft: {

@@ -14,7 +14,7 @@
   animation: wave 3s ease-in-out infinite; 
 }
 
-/*Pulse-soft animáció: */
+/*Pulse-soft */
 @keyframes pulse-soft {
   0%, 100% {
     transform: scale(1);
