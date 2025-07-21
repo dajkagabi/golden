@@ -30,6 +30,7 @@ const About = () => {
             </div>
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
               <p className="text-3xl font-bold text-chinese-red-600 mb-2">50K+</p> 
+              <p className="text-gray-700">Happy Customers</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
               <p className="text-3xl font-bold text-chinese-red-600 mb-2">200+</p> 
